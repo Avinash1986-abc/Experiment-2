@@ -425,7 +425,7 @@ Compare this with Step 3: the **same result (360)** needs far less code, with no
 ### Part B Screenshot (Steps 6–7)
 
 <p align="center">
-  <img src="OpenMP/Openmp_step_6_7.png" width="90%" alt="OpenMP steps 6 and 7"><br>
+  <img src="Openmp/Openmp_step_6_7.png" width="90%" alt="OpenMP steps 6 and 7"><br>
   <em>Figure B.1 — OpenMP Step 6 (<code>omp1</code>: 32 threads reporting in random order) and Step 7 (<code>omp_sum</code>: loop iterations shared between threads).</em>
 </p>
 
@@ -525,7 +525,7 @@ This is **thread coordination**. It is needed whenever stage 2 depends on result
 ### Part B Screenshot (Steps 8–10)
 
 <p align="center">
-  <img src="PerformanceAnalysis/Performance_analysis_1.png" width="90%" alt="OpenMP steps 8 to 10 and start of performance"><br>
+  <img src="Performance-Analysis/Performance_analysis_1.png" width="90%" alt="OpenMP steps 8 to 10 and start of performance"><br>
   <em>Figure B.2 — <code>omp_race</code> (100000 ≠ 400000), <code>omp_critical</code> (400000 ✅), <code>omp_barrier</code> (all Stage 1 before Stage 2), followed by the start of the sequential and Pthreads timing runs.</em>
 </p>
 
@@ -594,12 +594,12 @@ Both programs ask **"Enter number of threads:"** and were run with **1, 2, 4, 6 
 ### Part C Screenshots
 
 <p align="center">
-  <img src="PerformanceAnalysis/Performance_analysis_2.png" width="90%" alt="Pthreads and OpenMP timing runs"><br>
+  <img src="Performance-Analysis/Performance_analysis_2.png" width="90%" alt="Pthreads and OpenMP timing runs"><br>
   <em>Figure C.1 — Pthreads runs with 1, 2, 4, 6 and 16 threads, and the start of the OpenMP runs.</em>
 </p>
 
 <p align="center">
-  <img src="PerformanceAnalysis/Performance_analysis_3.png" width="90%" alt="OpenMP timing runs"><br>
+  <img src="Performance-Analysis/Performance_analysis_3.png" width="90%" alt="OpenMP timing runs"><br>
   <em>Figure C.2 — Complete Pthreads and OpenMP timing runs (1, 2, 4, 6 and 16 threads). Every run prints the correct result 499999999500.00.</em>
 </p>
 
@@ -642,7 +642,7 @@ $$
 S = \frac{1.365051}{0.135777} = 10.05\times, \qquad E = \frac{10.05}{16} \times 100 = 62.8\%
 $$
 
-Raw data: [`results/timing_results.csv`](results/timing_results.csv) · [`results/sequential_runs.csv`](results/sequential_runs.csv) · [`results/race_condition_results.csv`](results/race_condition_results.csv)
+Raw data: [`results/timing_results.csv`](Results/timing_results.csv) · [`results/sequential_runs.csv`](Results/sequential_runs.csv) · [`results/race_condition_results.csv`](Results/race_condition_results.csv)
 
 ---
 
@@ -652,7 +652,7 @@ All graphs are generated with **matplotlib** by [`scripts/generate_graphs.py`](s
 
 ### 11.1 Execution Time vs Number of Threads
 
-<p align="center"><img src="graphs/01_execution_time_vs_threads.png" width="85%" alt="Execution time vs threads"></p>
+<p align="center"><img src="Graphs/01_execution_time_vs_threads.png" width="85%" alt="Execution time vs threads"></p>
 
 **What the graph shows:**
 
@@ -663,7 +663,7 @@ All graphs are generated with **matplotlib** by [`scripts/generate_graphs.py`](s
 
 ### 11.2 Speedup vs Number of Threads
 
-<p align="center"><img src="graphs/02_speedup_vs_threads.png" width="85%" alt="Speedup vs threads"></p>
+<p align="center"><img src="Graphs/02_speedup_vs_threads.png" width="85%" alt="Speedup vs threads"></p>
 
 **What the graph shows:**
 
@@ -673,7 +673,7 @@ All graphs are generated with **matplotlib** by [`scripts/generate_graphs.py`](s
 
 ### 11.3 Efficiency vs Number of Threads
 
-<p align="center"><img src="graphs/03_efficiency_vs_threads.png" width="85%" alt="Efficiency vs threads"></p>
+<p align="center"><img src="Graphs/03_efficiency_vs_threads.png" width="85%" alt="Efficiency vs threads"></p>
 
 **What the graph shows:**
 
@@ -683,7 +683,7 @@ All graphs are generated with **matplotlib** by [`scripts/generate_graphs.py`](s
 
 ### 11.4 Pthreads vs OpenMP
 
-<p align="center"><img src="graphs/04_pthreads_vs_openmp.png" width="95%" alt="Pthreads vs OpenMP"></p>
+<p align="center"><img src="Graphs/04_pthreads_vs_openmp.png" width="95%" alt="Pthreads vs OpenMP"></p>
 
 **What the graph shows:**
 
@@ -694,7 +694,7 @@ All graphs are generated with **matplotlib** by [`scripts/generate_graphs.py`](s
 
 ### 11.5 Race Condition vs Synchronisation
 
-<p align="center"><img src="graphs/05_race_condition_results.png" width="85%" alt="Race condition results"></p>
+<p align="center"><img src="Graphs/05_race_condition_results.png" width="85%" alt="Race condition results"></p>
 
 **What the graph shows:**
 
@@ -704,7 +704,7 @@ All graphs are generated with **matplotlib** by [`scripts/generate_graphs.py`](s
 
 ### 11.6 Ideal vs Measured Time (Parallel Overhead)
 
-<p align="center"><img src="graphs/06_ideal_vs_measured_time.png" width="85%" alt="Ideal vs measured time"></p>
+<p align="center"><img src="Graphs/06_ideal_vs_measured_time.png" width="85%" alt="Ideal vs measured time"></p>
 
 **What the graph shows:**
 
@@ -728,7 +728,7 @@ Ideally, $1.365 / 16 \approx 0.085$ s, but the measured OpenMP time was $0.136$ 
 
 ### 11.8 Performance Summary
 
-<p align="center"><img src="graphs/07_performance_summary.png" width="100%" alt="Performance summary"></p>
+<p align="center"><img src="Graphs/07_performance_summary.png" width="100%" alt="Performance summary"></p>
 
 ### 11.9 Comparison with the Lab-Manual Reference
 
