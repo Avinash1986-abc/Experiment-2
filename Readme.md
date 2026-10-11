@@ -648,7 +648,7 @@ Raw data: [`results/timing_results.csv`](Results/timing_results.csv) · [`result
 
 ## 11. Performance Analysis
 
-All graphs are generated with **matplotlib** by [`scripts/generate_graphs.py`](scripts/generate_graphs.py) from the CSV files in `results/`.
+All graphs are generated with **matplotlib** by [`Script/Generate_graphs.py`](Script/Generate_graphs.py) from the CSV files in `results/`.
 
 ### 11.1 Execution Time vs Number of Threads
 
